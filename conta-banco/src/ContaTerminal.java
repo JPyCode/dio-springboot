@@ -9,7 +9,7 @@ public class ContaTerminal {
 
         System.out.println("Ótimo, agora digite o número da conta: ");
         int accountNumber = scanner.nextInt();
-        scanner.nextLine();
+        scanner.nextLine(); //limpando buffer de entrada
 
         System.out.println("Escreva seu nome completo: ");
         String clientName = scanner.nextLine();
@@ -17,7 +17,7 @@ public class ContaTerminal {
         System.out.println("Defina agora o saldo da conta: ");
         float ammount = scanner.nextFloat();
 
-        scanner.close();
+        scanner.close(); //encerrando o scanner
 
         System.out.printf(
             String.format("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo %.2f já está disponível para saque.", 
