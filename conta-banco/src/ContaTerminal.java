@@ -23,7 +23,7 @@ public class ContaTerminal {
         String clientName = scanner.nextLine();
 
         System.out.println("Defina agora o saldo da conta: ");
-        float ammount = scanner.nextFloat();
+        double ammount = scanner.nextDouble();
 
         scanner.close(); //encerrando o scanner
 
