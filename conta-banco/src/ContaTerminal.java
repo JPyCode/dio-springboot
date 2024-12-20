@@ -11,7 +11,7 @@ public class ContaTerminal {
         int accountNumber = scanner.nextInt();
         scanner.nextLine();
 
-        System.out.println("Digite agora seu nome completo: ");
+        System.out.println("Escreva seu nome completo: ");
         String clientName = scanner.nextLine();
 
         System.out.println("Defina agora o saldo da conta: ");
@@ -20,7 +20,7 @@ public class ContaTerminal {
         scanner.close();
 
         System.out.printf(
-            String.format("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo %.2f já está disponível para saque", 
+            String.format("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo %.2f já está disponível para saque.", 
             clientName, 
             agencyNumber,
             accountNumber,
