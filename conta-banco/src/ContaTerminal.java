@@ -2,7 +2,7 @@
  * Created by: Marcos Roberto
  * Date: 12-20-2024
  * Project Name: conta-banco
- * github: https://gitbub.com/JPyCode
+ * https://gitbub.com/JPyCode
  * Claro - Java com Spring Boot (Bootcamp - Dio)
  */
 
