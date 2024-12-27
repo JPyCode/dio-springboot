@@ -3,9 +3,9 @@
 Este projeto tem como objetivo apresentar a modelagem das funcionalidades unificadas em um único dispositivo revolucionário: o iPhone.
 
 Com seu lançamento, o iPhone consolidou funcionalidades de diversos dispositivos populares da época, incluindo:  
-- **Player de Música**  
-- **Navegador Web**  
 - **Aparelho Telefônico**
+- **Navegador Web**
+- **Player de Música**
 
 <img src="umlDiagram.png">
 
