@@ -1,18 +1,16 @@
-## Getting Started
+### Orientação a Objetos e UML: Diagrama de Classes do iPhone
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto tem como objetivo apresentar a modelagem das funcionalidades unificadas em um único dispositivo revolucionário: o iPhone.
 
-## Folder Structure
+Com seu lançamento, o iPhone consolidou funcionalidades de diversos dispositivos populares da época, incluindo:  
+- **Player de Música**  
+- **Navegador Web**  
+- **Aparelho Telefônico**
 
-The workspace contains two folders by default, where:
+<img src="umlDiagram.png">
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Além disso, o projeto inclui:  
+1. Um diagrama UML ilustrando a estrutura básica dessa abstração.  
+2. A implementação inicial do diagrama em **Java**.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Esse trabalho foi desenvolvido no contexto da disciplina *"Modelando o iPhone com UML: Funções de Músicas, Chamadas e Internet"*, parte do bootcamp *"Coding the Future - Java e SpringBoot | Claro - Java com Spring Boot"*, ministrado pelo professor Gleyson Sampaio na plataforma DIO.
