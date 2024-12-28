@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SomaNumeros {
-    
+
     private List<Integer> numbers = new ArrayList<>();
 
-    public void addNumero(int number) {
+    public void addNumber(int number) {
         this.numbers.add(number);
     }
 
@@ -18,7 +18,7 @@ public class SomaNumeros {
     }
 
     public void findBiggestNumber() {
-        if(numbers.isEmpty()) {
+        if (numbers.isEmpty()) {
             System.out.println("Não há números na lista");
             return;
         }
@@ -33,7 +33,7 @@ public class SomaNumeros {
     }
 
     public void findSmallestNumber() {
-        if(numbers.isEmpty()) {
+        if (numbers.isEmpty()) {
             System.out.println("Não há números na lista");
             return;
         }
@@ -48,7 +48,7 @@ public class SomaNumeros {
     }
 
     public void showNumbers() {
-        if(numbers.isEmpty()) {
+        if (numbers.isEmpty()) {
             System.out.println("Não há números na lista");
             return;
         }
@@ -60,21 +60,21 @@ public class SomaNumeros {
 
     public static void main(String[] args) {
         SomaNumeros sumNumbers = new SomaNumeros();
-    
-        sumNumbers.addNumero(5);
-        sumNumbers.addNumero(0);
-        sumNumbers.addNumero(0);
-        sumNumbers.addNumero(-2);
-        sumNumbers.addNumero(10);
-    
+
+        sumNumbers.addNumber(5);
+        sumNumbers.addNumber(0);
+        sumNumbers.addNumber(0);
+        sumNumbers.addNumber(-2);
+        sumNumbers.addNumber(10);
+
         System.out.println("Números adicionados:");
         sumNumbers.showNumbers();
-    
+
         System.out.println("Soma dos números = " + sumNumbers.sumNumbers());
-    
+
         sumNumbers.findBiggestNumber();
-    
+
         sumNumbers.findSmallestNumber();
-      }
-    
+    }
+
 }
