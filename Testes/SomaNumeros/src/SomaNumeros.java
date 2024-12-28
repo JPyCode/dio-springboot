@@ -5,7 +5,7 @@ public class SomaNumeros {
     
     private List<Integer> numbers = new ArrayList<>();
 
-    public void adicionarNumero(int number) {
+    public void addNumero(int number) {
         this.numbers.add(number);
     }
 
@@ -59,28 +59,22 @@ public class SomaNumeros {
     }
 
     public static void main(String[] args) {
-        // Criando uma instância da classe SomaNumeros
-        SomaNumeros somaNumeros = new SomaNumeros();
+        SomaNumeros sumNumbers = new SomaNumeros();
     
-        // Adicionando números à lista
-        somaNumeros.adicionarNumero(5);
-        somaNumeros.adicionarNumero(0);
-        somaNumeros.adicionarNumero(0);
-        somaNumeros.adicionarNumero(-2);
-        somaNumeros.adicionarNumero(10);
+        sumNumbers.addNumero(5);
+        sumNumbers.addNumero(0);
+        sumNumbers.addNumero(0);
+        sumNumbers.addNumero(-2);
+        sumNumbers.addNumero(10);
     
-        // Exibindo a lista de números adicionados
         System.out.println("Números adicionados:");
-        somaNumeros.showNumbers();
+        sumNumbers.showNumbers();
     
-        // Calculando e exibindo a soma dos números na lista
-        System.out.println("Soma dos números = " + somaNumeros.sumNumbers());
+        System.out.println("Soma dos números = " + sumNumbers.sumNumbers());
     
-        // Encontrando e exibindo o maior número na lista
-        somaNumeros.findBiggestNumber();
+        sumNumbers.findBiggestNumber();
     
-        // Encontrando e exibindo o menor número na lista
-        somaNumeros.findSmallestNumber();
+        sumNumbers.findSmallestNumber();
       }
     
 }
