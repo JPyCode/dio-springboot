@@ -14,16 +14,31 @@ public class Dicionario {
     }
 
     void removerPalavra(String palavra) {
+        if(!dicionario.containsKey(palavra)) {
+            System.out.println("Palavra não encontrada.");
+            return;
+        }
+
         dicionario.remove(palavra);
     }
 
     void exibirPalavras() {
+        if(dicionario.isEmpty()) {
+            System.out.println("Dicionário vazio.");
+            return;
+        }
+
         dicionario.forEach((palavra, definicao) -> {
             System.out.println(palavra + " : " + definicao);
         });
     }
 
     void pesquisarPorPalavra(String palavra) {
+        if(!dicionario.containsKey(palavra)) {
+            System.out.println("Palavra não encontrada.");
+            return;
+        }
+        
         System.out.println(dicionario.get(palavra));
     }
 
