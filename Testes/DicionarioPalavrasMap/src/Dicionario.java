@@ -18,7 +18,6 @@ public class Dicionario {
             System.out.println("Palavra não encontrada.");
             return;
         }
-
         dicionario.remove(palavra);
     }
 
@@ -27,7 +26,6 @@ public class Dicionario {
             System.out.println("Dicionário vazio.");
             return;
         }
-
         dicionario.forEach((palavra, definicao) -> {
             System.out.println(palavra + " : " + definicao);
         });
@@ -37,8 +35,7 @@ public class Dicionario {
         if(!dicionario.containsKey(palavra)) {
             System.out.println("Palavra não encontrada.");
             return;
-        }
-        
+        } 
         System.out.println(dicionario.get(palavra));
     }
 
