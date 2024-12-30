@@ -96,7 +96,9 @@ public class Main {
                     int contaOrigem = teclado.nextInt();
                     contaOrigem -= 1;
                     // conta de origem precisa ser decrementada em 1 para acessar o índice correto
-                    if(Banco.getContas().get(contaOrigem) == null) {
+                    try{
+                        conta = Banco.getContas().get(contaOrigem);
+                    } catch (IndexOutOfBoundsException e) {
                         System.out.println("Conta de origem não encontrada");
                         break;
                     }
@@ -105,7 +107,6 @@ public class Main {
                     valor = teclado.nextDouble();
                     System.out.println("Digite o número da conta destino: ");
                     numero = teclado.nextInt();
-                    conta = Banco.getContas().get(contaOrigem);
                     Conta contaDestino = null;
                     for (Conta c : Banco.getContas()) {
                         if (c.getNumero() == numero) {
