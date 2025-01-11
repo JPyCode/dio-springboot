@@ -11,7 +11,7 @@ public class SpringSecurityJwtApplication {
 
 	@RequestMapping("/")
 	String home() {
-		return "Hello World: " + Math.random();
+		return "Hello World!";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(SpringSecurityJwtApplication.class, args);
